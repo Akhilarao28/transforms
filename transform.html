@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        .container{
+            width:100%;
+            display:grid;
+            row-gap: 5px;
+            column-gap: 5px;
+           grid-template-columns: 1fr 1fr 1fr 1fr;
+           grid-template-rows: 100px 100px 100px 100px;
+        }
+        .image{
+            border-color: black;
+            border-style: solid;
+            width:200px;
+            height:200px;  
+        }
+        .image1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .image2{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .image3{
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .image4{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        
+        .image1{
+            transform:skewX(45deg);
+        }
+        .image2{
+            transform:translateX(100px) translateY(50px);
+        }
+        .image3{
+            transform:rotate(30deg);
+        }
+        .image4{
+           
+            transform:scaleX(1.5);
+            transform:scaleY(1.5);
+        }
+        .D1{
+            display:grid;
+            row-gap: 5px;
+            column-gap: 5px;
+           grid-template-columns: 1fr 1fr 1fr 1fr ;
+           grid-template-rows: 100px 100px 100px 100px;
+        }
+        .nature{
+            border-color: black;
+            border-style: solid;
+            width:200px;
+            height:200px;
+        }
+        .nature1{
+           grid-column-start: 1;
+           grid-column-end: 2;
+           grid-row-start: 1;
+           grid-row-end: 2;
+       }
+       .nature2{
+           grid-column-start: 4;
+           grid-column-end: 5;
+           grid-row-start: 1;
+           grid-row-end: 3;
+       }
+       .nature3{
+           grid-column-start: 2;
+           grid-column-end: 4;
+           grid-row-start: 3;
+           grid-row-end: 4;
+       }
+       .nature4{
+           grid-column-start: 3;
+           grid-column-end: 5;
+           grid-row-start: 4;
+           grid-row-end: 6;
+       }
+       .nature1{
+        transform:translate3d(75px,100px,50px);
+        box-shadow: 50px 50px 4px rgb(100,100,100);
+       }
+       .nature2{
+        transform:scale3d(2,1,2);
+        box-shadow: 25px 20px 5px rgb(169, 169, 226);
+       }
+       .nature3{
+        transform:rotate3d(1,2,3,45deg);
+        box-shadow:20px 30px 6px red ;
+       }
+       .nature4{
+        transform:perspective(100px) rotateX(45deg);
+        box-shadow: 20px 15px 4px rgb(87, 173, 234);
+       }
+    </style>
+</head>
+<body><h2 style="text-align: center; font-size: 30px;">2D</h2>
+    <div class="container">
+        <img  src="./bird.jpeg" class="image image1">
+        <img  src="./download (1).jpeg" class="image image2">
+        <img  src="./nature6.jpeg"  class="image image3">
+        <img  src="./download3.jpeg" class="image image4"> 
+    </div>
+    <h2 style="text-align: center; font-size: 30px;">3D</h2>
+    <div class="D1">
+        <img  src="./anime.jpeg"   class="nature nature1">
+        <img  src="./nature9.jpeg"  class="nature nature2">
+        <img src="./download4.jpeg" class="nature nature3">
+        <img src="./download5.jpeg"  class="nature nature4">
+    </div>
+</body>
+</html> 
